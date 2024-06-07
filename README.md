@@ -1,18 +1,1 @@
-- [ x ] Change the title to bottom left and change the font
-- [ x ] Check what "All Pages" link does
-- [ x ] Reduce the size of the "Start" "Contact Us" containers
-- [ x ] Try a few videos and see how it looks
-- [ x ] Change the 'home' icon
-- [ x ] Transition from Page 1 - Page 2: the 2 sections look separate. Could you blend the colors so the scroll seems seamless?
-- [ x ] Reduce the size of the "Leverage"
-- [ x ] Update the "Discover" Part here as well
-- [ x ] Change the "Discover More" container size to a bit smaller
-- [ x ] Change the color of the "Discover More" container to white
-- [ x ] Change the color of the "Discover" part to white
-- [ x ] Reduce the size of the numbers
-- [ x ] Transition 3-4: lets look for images/colors which look like seamless scrolling from one section to another.
-- [ x ] Try a logo on top like in the reference site
-- [ x ] Look for something that says "digital" or "bits" etc
-- [ x ] Edit Footer Icons
-- [ x ] Change the image of the girl on the boat to something more in-line with the color template.
-- [ ] Make the sections pop like in the reference site
+BitSol Data Solutions Landing Website

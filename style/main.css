@@ -21,7 +21,7 @@
 
 #main-header {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     padding: 10px 9%;
     z-index: 1;
@@ -98,6 +98,7 @@
 #header-container .logo{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .container {
     width: 100%;
     height: 100vh;
@@ -108,6 +109,7 @@
     align-items: end;
     font-family: 'Roboto', sans-serif;
 }
+
 
 
 .background{
@@ -151,7 +153,7 @@
 
 .btn-primary{
     display: inline-block;
-    padding: 14px 24px;
+    padding: 8px 16px;
     border: 0;
     text-decoration: none;
     border-radius: 32px;
@@ -180,7 +182,7 @@
 .btn-secondary {
     border: none;
     display: inline-block;
-    padding: 14px 24px;
+    padding: 8px 16px;
     border: 0;
     text-decoration: none;
     border-radius: 32px;
@@ -250,18 +252,45 @@
 
 /* Accomplishment Section */
 
-.accomplishment {
+/* .accomplishment {
     background-image: 
-        linear-gradient(to bottom, rgba(4, 0, 17, 0.2) 0%, rgba(12, 3, 51, 0.2) 50%, #151614 100%), 
-        url('../assets/image5.jpg');
+        linear-gradient(to bottom, rgba(4, 0, 17, 0.2) 0%, rgba(12, 3, 51, 0.2) 80%, #151614 100%), 
+        url('../assets/image6.jpg');
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     width: 100%;
     padding: 100px 9%;
     color: #fff;
     display: flex;
     gap: 50px;
+} */
+
+.accomplishment {
+    position: relative;
+    width: 100%;
+    padding: 100px 9%;
+    color: #fff;
+    display: flex;
+    gap: 50px;
+    background: url('../assets/image6.jpg') center/cover fixed no-repeat;
+
+}
+
+.accomplishment::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(4, 0, 17, 0.7) 0%, rgba(12, 3, 51, 0.2) 80%, #151614 100%);
+    z-index: 1;
+}
+
+.accomplishment .indAcc{
+    position: relative;
+    z-index: 2;
 }
 
 .accomplishment .acc-number{
@@ -274,6 +303,7 @@
     width: 100%;
     padding: 100px 9%;
     background-color: var(--bgColor);
+    background-image: linear-gradient(to bottom, rgba(21, 22, 20, 0.7) 0%, rgba(21, 22, 20, 0.85) 50%, #151614 100%);
     color: #fff;
     display: flex;
     gap: 50px;
@@ -310,10 +340,14 @@
     flex: 3;
 }
 
+.services-bottom a{
+    text-decoration: none;
+}
+
 .services button{
     flex: 2;
     display: inline-block;
-    padding: 14px 24px;
+    padding: 8px 16px;
     border: 0;
     text-decoration: none;
     border-radius: 20px;
@@ -408,7 +442,7 @@
 
 #started button{
     display: inline-block;
-    padding: 14px 24px;
+    padding: 8px 16px;
     border: 0;
     text-decoration: none;
     border-radius: 20px;
@@ -474,7 +508,7 @@
 #blog .blog-top button{
     flex: 2;
     display: inline-block;
-    padding: 14px 24px;
+    padding: 8px 16px;
     border: 0;
     text-decoration: none;
     border-radius: 20px;

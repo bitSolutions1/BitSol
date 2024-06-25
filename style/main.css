@@ -364,17 +364,21 @@
     font-family: 'General Sans', sans-serif;
     display: grid;
     gap: 20px 50px;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: stretch;
 }
 
 .services .services-bottom .service-card {
     background-color: var(--mainColor);
     margin: 10px;
+    margin-right: 4px;
     padding: 40px 30px;
+    padding-bottom: 5px;
     color: var(--bgColor);
     cursor: pointer;
-    height: 200px;
+    min-height: 200px;
     transition: 0.3s;
+    height: 100%;
 }
 
 /* Add a halo effect on hover */
@@ -389,7 +393,7 @@
 
 .services .services-bottom .service-card p{
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -524,7 +528,7 @@
 
 #blog .blog-bottom{
     margin-left: auto;
-    margin-right: -100px;
+    /* margin-right: -100px; */
 }
 
 
@@ -736,7 +740,6 @@
     gap: 8px; 
 }
 
-
 /* Responsive */
 @media screen and (max-width: 768px){
     .content{
@@ -811,4 +814,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    #blog .blog-bottom{
+        margin-right: -100px;
+    }
+    
+    
 }
